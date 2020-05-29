@@ -9,7 +9,7 @@
 
 Soflomo\Purifier is the [HTMLPurifier](http://htmlpurifier.org/) integration for Zend Framework 2.
 
-It provides a `Zend\Filter\FilterInterface` implementation so you can use HTMLPurifier within your `Zend\InputFilter` classes.
+It provides a `Laminas\Filter\FilterInterface` implementation so you can use HTMLPurifier within your `Laminas\InputFilter` classes.
 Furthermore, a view helper is provided to help purifying html on the fly in view scripts.
 
 
@@ -30,7 +30,7 @@ In your input filter configuration, use the `htmlpurifier` as `name` in your fil
 An example `Form`:
 
 ```php
-class MyForm extends Zend\Form\Form implements Zend\InputFilter\InputFilterProviderInterface
+class MyForm extends Laminas\Form\Form implements Laminas\InputFilter\InputFilterProviderInterface
 {
     public function init()
     {
@@ -63,7 +63,7 @@ class MyForm extends Zend\Form\Form implements Zend\InputFilter\InputFilterProvi
 or an `InputFilter`:
 
 ```php
-class MyInputFilter extends Zend\InputFilter\InputFilter
+class MyInputFilter extends Laminas\InputFilter\InputFilter
 {
     public function init()
     {
@@ -147,7 +147,7 @@ Definitions can also be set under the `definitions` key in the `config` array. T
 You can also set a different configuration each time you add the filter with a spec using the usual `options` key:
 
 ```php
-class MyInputFilter extends Zend\InputFilter\InputFilter
+class MyInputFilter extends Laminas\InputFilter\InputFilter
 {
     public function init()
     {
@@ -182,7 +182,7 @@ class MyInputFilter extends Zend\InputFilter\InputFilter
 
 If you instantiate your forms or your input filters manually with the `new` keyword, rather than pulling them from their respective plugin managers (i.e. `FormElementManager` and `InputFilterManager`), the `FilterManager` is not injected automatically into their factories, and these will resort to use a default one.
 
-As such, you get a `ServiceNotFoundException: Zend\Filter\FilterPluginManager::get was unable to fetch or create an instance for htmlpurifier`. This means the filter plugin manager was lazily instantiated, and does not know about the `htmlpurifier` plugin.
+As such, you get a `ServiceNotFoundException: Laminas\Filter\FilterPluginManager::get was unable to fetch or create an instance for htmlpurifier`. This means the filter plugin manager was lazily instantiated, and does not know about the `htmlpurifier` plugin.
 
 You can hack your way through this by executing the initializers manually:
 

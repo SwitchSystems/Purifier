@@ -8,8 +8,8 @@ namespace Soflomo\Purifier;
 use HTMLPurifier;
 use Soflomo\Purifier\Factory\HtmlPurifierConfigFactory;
 use Traversable;
-use Zend\Filter\AbstractFilter;
-use Zend\Filter\FilterInterface;
+use Laminas\Filter\AbstractFilter;
+use Laminas\Filter\FilterInterface;
 
 class PurifierFilter extends AbstractFilter implements FilterInterface
 {

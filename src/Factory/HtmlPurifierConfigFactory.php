@@ -8,7 +8,7 @@ namespace Soflomo\Purifier\Factory;
 use HTMLPurifier_Config;
 use HTMLPurifier_Exception;
 use RuntimeException;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class HtmlPurifierConfigFactory
 {

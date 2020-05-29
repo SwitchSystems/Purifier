@@ -9,9 +9,9 @@ use HTMLPurifier;
 use HTMLPurifier_Config;
 use PHPUnit_Framework_TestCase as TestCase;
 use Soflomo\Purifier;
-use Zend\InputFilter\InputFilter;
-use Zend\Mvc\Application;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\InputFilter\InputFilter;
+use Laminas\Mvc\Application;
+use Laminas\ServiceManager\ServiceManager;
 
 class ModuleIntegrationTest extends TestCase
 {
@@ -26,9 +26,9 @@ class ModuleIntegrationTest extends TestCase
         $this->appConfig      = [
             'modules' => [
                 'Soflomo\Purifier',
-                'Zend\Router',
-                'Zend\Filter',
-                'Zend\InputFilter',
+                'Laminas\Router',
+                'Laminas\Filter',
+                'Laminas\InputFilter',
             ],
             'module_listener_options' => [],
         ];
@@ -85,7 +85,7 @@ class ModuleIntegrationTest extends TestCase
         $this->assertEquals($purifierViewHelper, $viewHelperManager->get(Purifier\PurifierViewHelper::ALIAS));
     }
 
-    public function testFilterConfigCanBeInitializedByZendInputFilterFactory()
+    public function testFilterConfigCanBeInitializedByLaminasInputFilterFactory()
     {
         $app         = Application::init($this->appConfig);
         $inputFilter = new InputFilter();

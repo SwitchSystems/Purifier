@@ -12,7 +12,7 @@ use HTMLPurifier_HTMLDefinition;
 use PHPUnit_Framework_TestCase as TestCase;
 use Soflomo\Purifier\Factory\HtmlPurifierConfigFactory;
 use VirtualFileSystem\FileSystem;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 class HtmlPurifierConfigFactoryTest extends TestCase
 {

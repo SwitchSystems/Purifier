@@ -60,7 +60,7 @@ All notable changes to this project will be documented in this file, in reverse 
 - **[BC-BREAK]** Removed zendframework monolithic dependency and bumped zend-filter minimum version to 2.5 ([#5](https://github.com/Soflomo/Purifier/pull/5), [#6](https://github.com/Soflomo/Purifier/pull/6))
 
 ### Removed
-- **[BC-BREAK]** Loading the module via `Zend\Loader` is no longer possible. Composer autoloader is now required.
+- **[BC-BREAK]** Loading the module via `Laminas\Loader` is no longer possible. Composer autoloader is now required.
 
 
 ## 0.1.1 - 2013-04-23

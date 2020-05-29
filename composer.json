@@ -31,27 +31,28 @@
     },
     "require": {
         "php": ">=5.6",
-        "zendframework/zend-filter": "^2.7.1",
-        "ezyang/htmlpurifier": "^4.5"
+        "laminas/laminas-filter": "^2.7.1",
+        "ezyang/htmlpurifier": "^4.5",
+        "laminas/laminas-dependency-plugin": "^1.0"
     },
     "require-dev": {
-        "zendframework/zend-servicemanager": "^3.0.1",
-        "zendframework/zend-view": "^2.8.1",
+        "laminas/laminas-servicemanager": "^3.0.1",
+        "laminas/laminas-view": "^2.8.1",
         "phpunit/phpunit": "^4.8",
         "php-vfs/php-vfs": "^1.3",
-        "zendframework/zend-mvc": "^3.0.1",
-        "zendframework/zend-inputfilter": "^2.7.3",
-        "zendframework/zend-serializer": "^2.8.0",
-        "zendframework/zend-log": "^2.9.1",
-        "zendframework/zend-i18n": "^2.7.3",
-        "zendframework/zend-console": "^2.6.0",
-        "zendframework/zend-http": "^2.5",
+        "laminas/laminas-mvc": "^3.0.1",
+        "laminas/laminas-inputfilter": "^2.7.3",
+        "laminas/laminas-serializer": "^2.8.0",
+        "laminas/laminas-log": "^2.9.1",
+        "laminas/laminas-i18n": "^2.7.3",
+        "laminas/laminas-console": "^2.6.0",
+        "laminas/laminas-http": "^2.5",
         "friendsofphp/php-cs-fixer": "^2.0"
     },
     "suggest": {
-        "zendframework/zend-servicemanager": "For creating the filter with the SM factory",
-        "zendframework/zend-view": "For using the purifier as view helper",
-        "zendframework/zend-modulemanager": "To load the filter as a module in a ZF2 application"
+        "laminas/laminas-servicemanager": "For creating the filter with the SM factory",
+        "laminas/laminas-view": "For using the purifier as view helper",
+        "laminas/laminas-modulemanager": "To load the filter as a module in a ZF2 application"
     },
     "autoload": {
         "psr-4": {
