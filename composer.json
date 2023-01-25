@@ -26,7 +26,8 @@
     "extra": {
         "branch-alias": {
             "dev-master": "2.x-dev",
-            "dev-1.x": "1.x-dev"
+            "dev-1.x": "1.x-dev",
+	    "dev-php81": "3.0.x-dev"
         }
     },
     "require": {
